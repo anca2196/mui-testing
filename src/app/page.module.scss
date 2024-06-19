@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  min-height: 100vh;
+  gap: 16px
+}
+
+.drawerButton {
+  max-width: 200px;
+}

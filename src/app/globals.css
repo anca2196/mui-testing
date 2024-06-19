@@ -1,0 +1,10 @@
+:root {
+  --font-mono: "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
+    "Source Code Pro";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
