@@ -1,23 +1,20 @@
 import Chip from "@mui/material/Chip";
 import CheckIcon from "@mui/icons-material/Check";
 import WarningIcon from "@mui/icons-material/Warning";
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import { GridActionsCellItem } from '@mui/x-data-grid';
+import { GridActionsCellItem } from "@mui/x-data-grid";
 export const columns = [
-
+  { field: "id", headerName: "ID", width: 90 },
   {
     field: "name",
     headerName: "Name",
     width: 180,
     editable: true,
-    headerClassName: "theme--header",
   },
   {
     field: "email",
     headerName: "Email",
     width: 150,
     editable: true,
-    headerClassName: "theme--header",
   },
   {
     field: "invited",
@@ -35,7 +32,6 @@ export const columns = [
         />
       );
     },
-    headerClassName: "theme--header",
   },
 
   {
@@ -48,26 +44,24 @@ export const columns = [
   {
     field: "managers",
     headerName: "Managers",
-    type: 'actions',
+    type: "actions",
     width: 180,
     getActions: (params) => [
-        <GridActionsCellItem
-          icon={<CheckIcon />}
-          label="Toggle Admin"
-        //   onClick={toggleAdmin(params.id)}
-          showInMenu
-          me
-        />,
-        <GridActionsCellItem
-          icon={<WarningIcon />}
-          label="Delete User"
-        //   onClick={duplicateUser(params.id)}
-          showInMenu
-        />,
-      ],
-    headerClassName: "theme--header",
+      <GridActionsCellItem
+        icon={<CheckIcon />}
+        label="Toggle Admin"
+        key={1}
+        showInMenu
+        me
+      />,
+      <GridActionsCellItem
+        icon={<WarningIcon />}
+        label="Delete User"
+        key={2}
+        showInMenu
+      />,
+    ],
   },
-
 ];
 
 export const rows = [
@@ -78,7 +72,6 @@ export const rows = [
     invited: "Invited",
     updated: "Cell",
     mangers: "",
-
   },
   {
     id: 2,
@@ -87,7 +80,6 @@ export const rows = [
     invited: "Invited",
     updated: "Cell",
     mangers: "",
-
   },
   {
     id: 3,
