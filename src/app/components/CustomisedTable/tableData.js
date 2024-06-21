@@ -171,37 +171,4 @@ export const rows = [
     updated: "Cell",
     mangers: "",
   },
-  {
-    id: 7,
-    name: "Jane Marie Doe",
-    email: "john@sz.co.uk",
-    invited: "Invited",
-    updated: "Cell",
-    mangers: "",
-  },
-
-  {
-    id: 5,
-    name: "Alicia Doe",
-    email: "john@sz.co.uk",
-    invited: "Invited",
-    updated: "Cell",
-    mangers: "",
-  },
-  {
-    id: 6,
-    name: "Tyler Doe",
-    email: "john@sz.co.uk",
-    invited: "Rejected",
-    updated: "Cell",
-    mangers: "",
-  },
-  {
-    id: 7,
-    name: "Jane Marie Doe",
-    email: "john@sz.co.uk",
-    invited: "Invited",
-    updated: "Cell",
-    mangers: "",
-  },
 ];
