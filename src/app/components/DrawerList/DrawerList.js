@@ -151,7 +151,7 @@ export const ProjectDrawerList = () => {
             renderValue={(selected) => (
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
                 {selected.map((value) => (
-                  <Chip key={value} label={value} />
+                  <Chip key={value} label={value} color="secondary" />
                 ))}
               </Box>
             )}
@@ -169,12 +169,12 @@ export const ProjectDrawerList = () => {
             <DatePicker />
           </LocalizationProvider>
         </FormControl>
-        <FormGroup>
+        <FormControl sx={{ ml: 1 }}>
           <FormControlLabel
             control={<Switch defaultChecked />}
             label="Toggle label"
           />
-        </FormGroup>
+        </FormControl>
         <FormControl sx={{ m: 1, width: "100%" }}>
           <TextField
             id="outlined-basic"

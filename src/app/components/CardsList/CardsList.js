@@ -16,7 +16,7 @@ export const CardsList = () => {
       {[1, 2, 3].map((card) => (
         <Card key={card} sx={{ minWidth: 275, padding: "8px" }}>
           <CardContent>
-            <Chip label="Status label" color="primary" />
+            <Chip label="Status label" color={card % 2 !== 0 ? "secondary" : "primary"}/>
             <h2 className={styles.title}> H2 Title</h2>
 
             <h3 className={styles.subtitle}> H3 Title</h3>
@@ -50,7 +50,7 @@ export const CardsList = () => {
           </CardContent>
           <Divider />
           <CardActions>
-            <Button onClick={() => {}} variant="contained" fullWidth>
+            <Button onClick={() => {}} variant="contained" color="secondary" fullWidth>
               Secondary CTA
             </Button>
           </CardActions>

@@ -8,6 +8,7 @@ const Graph = () => {
       <h1 className={styles.title}>H1 Analytics</h1>
       <div className={styles.graphWrapper}>
         <BarChart
+          colors={["#005fe5", "#ffd129", "#00204d", "#3388ff"]}
           series={[
             { data: [35, 44, 24, 34] },
             { data: [51, 6, 49, 30] },

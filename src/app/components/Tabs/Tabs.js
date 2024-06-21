@@ -7,6 +7,8 @@ import Projects from "../Projects/Projects";
 import Typography from '@mui/material/Typography';
 import { CardsList } from "../CardsList/CardsList";
 import Graph from "../Graph/Graph";
+import Multiselect from "../MultiSelect/Multiselect";
+import CustomisedTable from "../CustomisedTable/CustomisedTable";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -55,7 +57,14 @@ export const TabsContainer = () => {
         <Graph />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <h1>Reskilling</h1>
+        <>
+        <h1>Step 4 - Customisation</h1>
+        <h2>1.  MultiSelect</h2>
+        <Multiselect/>
+        <h2>2. Custom Table</h2>
+        <CustomisedTable/>
+        </>
+
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
       <h1>Talent Review</h1>
